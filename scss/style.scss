@@ -678,31 +678,90 @@ a {
       margin-top: 10px;
    }
 }
-.ad-item__right-content-icon-box-phone{
+.ad-item__right-content-icon-box-phone {
    display: flex;
    align-items: center;
 }
 .change-password {
    label {
-   display: block;
+      display: block;
+      margin-top: 30px;
+   }
+
+   input {
+      padding: 10px;
+      border-radius: 12px;
+      width: 100%;
+      border: 1px solid #336699;
+      margin-top: 10px;
+   }
+
+   button {
+      all: unset;
+      margin-top: 100px;
+      margin-left: 100px;
+      background-color: #0099ff;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+   }
+}
+.transactions {
    margin-top: 30px;
+
+   &__first-block {
+      p {
+         font-size: 18px;
+      }
+
+      hr {
+         width: 70%;
+         margin-top: 10px;
+         background-color: gold;
+         height: 12px;
+      }
+
+      h4 {
+         font-weight: normal;
+         margin-top: 10px;
+      }
+   }
+
+   &__second-block {
+      margin-top: 40px;
+      p {
+         font-size: 18px;
+      }
+
+      hr {
+         width: 30%;
+         margin-top: 10px;
+         background-color: green;
+         height: 12px;
+      }
+
+      h4 {
+         font-weight: normal;
+         margin-top: 10px;
+      }
+   }
 }
 
-input {
-   padding: 10px;
-   border-radius: 12px;
-   width: 100%;
-   border: 1px solid #336699;
-   margin-top: 10px;
+.transactions__counter {
+   border: 1px solid black;
+   border-radius: 14px;
+   padding: 15px;
+   display: flex;
+
+   p {
+      margin-left: 60px;
+   }
 }
 
-button {
-   all: unset;
-   margin-top: 100px;
-   margin-left: 100px;
-   background-color: #0099ff;
-   color: white;
-   padding: 20px;
-   border-radius: 6px;
-}
+.transactions__counter__list {
+   li {
+      list-style: none;
+      margin-top: 20px;
+      font-size: 18px;
+   }
 }
