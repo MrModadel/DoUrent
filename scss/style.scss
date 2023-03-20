@@ -800,7 +800,6 @@ a {
    button {
       all: unset;
       margin-top: 60px;
-      margin-left: 100px;
       background-color: #0099ff;
       color: white;
       padding: 15px 40px;
@@ -824,7 +823,6 @@ a {
    button {
       all: unset;
       margin-top: 200px;
-      margin-left: 50px;
       background-color: #0099ff;
       color: white;
       padding: 15px 40px;
@@ -853,4 +851,14 @@ a {
 }
 .item a {
    font-size: 10px;
+}
+.loginForm__button-box{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.loginForm__button{
+   width: 35%;
+   height: 40px;
+   border-radius: 7px;
 }
