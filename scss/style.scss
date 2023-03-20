@@ -798,12 +798,11 @@ a {
    }
 
    button {
-      all: unset;
-      margin-top: 60px;
       background-color: #0099ff;
       color: white;
       padding: 15px 40px;
       border-radius: 6px;
+      border: 0;
    }
 }
 .loginForm {
