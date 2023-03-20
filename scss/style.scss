@@ -765,3 +765,84 @@ a {
       font-size: 18px;
    }
 }
+.auth__img {
+   margin-top: 30px;
+   margin-left: 280px;
+}
+
+.login__title {
+   display: block;
+   text-align: center;
+   font-size: 20px;
+   font-weight: normal;
+   border: 1px solid #0099ff;
+   border-radius: 12px;
+   padding: 15px;
+   margin-top: 50px;
+   cursor: pointer;
+}
+
+.loginForm {
+   label {
+      display: block;
+      margin-top: 30px;
+   }
+
+   input {
+      padding: 15px;
+      border-radius: 12px;
+      width: 100%;
+      border: 1px solid #336699;
+      margin-top: 10px;
+   }
+
+   button {
+      all: unset;
+      margin-top: 60px;
+      margin-left: 100px;
+      background-color: #0099ff;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 6px;
+   }
+}
+.loginForm {
+   label {
+      display: block;
+      margin-top: 30px;
+   }
+
+   input {
+      padding: 15px;
+      border-radius: 12px;
+      width: 100%;
+      border: 1px solid #336699;
+      margin-top: 10px;
+   }
+
+   button {
+      all: unset;
+      margin-top: 200px;
+      margin-left: 50px;
+      background-color: #0099ff;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 6px;
+   }
+
+   p {
+      color: #336699;
+   }
+}
+
+.radioo {
+   display: flex;
+
+   input {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+   }
+}
