@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="../css/style.min.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -16,7 +16,7 @@
          <div class="container">
             <div class="header__container">
                <div class="header__up-block hr-up-block">
-                  <div class="hr-up-block__title title">Do<img src="img/header-img.png" alt="">Rent?</div>
+                  <div class="hr-up-block__title title">Do<img src="../img/header-img.png" alt="">Rent?</div>
                   <div class="hr-up-block__icon-box">
                      <a class="hr-up-block__icon-star" href="#">
                         <span class="material-icons">
@@ -56,22 +56,33 @@
             </div>
          </div>
       </section>
-      <section class="about">
+      <section class="about-filter">
          <div class="container">
-            <div class="about__container">
-               <div class="about__line"></div>
-               <div class="about__title"><a href="#">Купити</a> <a href="#">Продати</a> <a href="#">Орендувати</a>
+            <div class="about-filter__container">
+               <div class="about-filter__up-block">
+                  <select name="User-select" id="sl-one" class="about-filter__select">
+                     <option value="1">Івано Франківськ</option>
+                  </select>
+                  <div class="about-filter__up-block-inp-box">
+                     +<input type="text" class="about-filter__up-block-inp">км
+                  </div>
                </div>
-               <div class="about__line"></div>
-               <div class="about__text">Пропозиції від власників поруч</div>
-               <ul class="ul-box about__ul">
-                  <li class="ul-box__list"><a href="#">Електроінструмент</a></li>
-                  <li class="ul-box__list"><a href="#">Будівельне обладнання</a></li>
-                  <li class="ul-box__list"><a href="#">Спецтехніка</a></li>
-               </ul>
-               <div class="about__line"></div>
-               <div class="about__title">Останні оголошення</div>
-               <div class="about__line"></div>
+               <div class="about-filter__line"></div>
+               <div class="about-filter__text">Купити шуруповерти Івано
+                  Франківськ</div>
+               <div class="about-filter__line"></div>
+               <div class="about-filter__down-block">
+                  <a href="#" class="about-filter__down-block-fl">Фільтри
+                     <span class="material-icons">
+                        tune
+                     </span>
+                  </a>
+                  <a href="#" class="about-filter__down-block-sr">Сортування
+                     <span class="material-icons">
+                        candlestick_chart
+                     </span>
+                  </a>
+               </div>
             </div>
          </div>
       </section>
@@ -80,7 +91,7 @@
             <div class="adver__container">
                <div class="adver__item ad-item">
                   <div class="ad-item__left">
-                     <a href="#" class="ad-item__left-img" style="background-image: url(img/item-img.png);"></a>
+                     <a href="#" class="ad-item__left-img" style="background-image: url(../img/item-img.png);"></a>
                      <div class="ad-item__left-data-text">
                         12:32 03.05.2023
                      </div>
@@ -111,7 +122,7 @@
                </div><!-- /ad-item -->
                <div class="adver__item ad-item">
                   <div class="ad-item__left">
-                     <a href="#" class="ad-item__left-img" style="background-image: url(img/item-img.png);"></a>
+                     <a href="#" class="ad-item__left-img" style="background-image: url(../img/item-img.png);"></a>
                      <div class="ad-item__left-data-text">
                         12:32 03.05.2023
                      </div>
@@ -143,7 +154,7 @@
                <div class="adver__item ad-item">
                   <div class="ad-item__left">
                      <a href="#" class="ad-item__left-img"
-                        style="background-image: url(img/item-img-inpofidol.png);"></a>
+                        style="background-image: url(../img/item-img-inpofidol.png);"></a>
                      <div class="ad-item__left-data-text">
                         12:32 03.05.2023
                      </div>
@@ -175,7 +186,7 @@
                <div class="adver__item ad-item">
                   <div class="ad-item__left">
                      <a href="#" class="ad-item__left-img"
-                        style="background-image: url(img/item-img-inpofidol.png);"></a>
+                        style="background-image: url(../img/item-img-inpofidol.png);"></a>
                      <div class="ad-item__left-data-text">
                         12:32 03.05.2023
                      </div>
@@ -212,7 +223,7 @@
                <div class="adver__item ad-item">
                   <div class="ad-item__left">
                      <a href="#" class="ad-item__left-img"
-                        style="background-image: url(img/item-img-inpofidol.png);"></a>
+                        style="background-image: url(../img/item-img-inpofidol.png);"></a>
                      <div class="ad-item__left-data-text">
                         12:32 03.05.2023
                      </div>
@@ -244,7 +255,6 @@
          </div>
       </section><!-- /adver -->
    </div>
-
    <script src="js/script.js"></script>
 </body>
 

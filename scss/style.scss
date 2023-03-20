@@ -139,8 +139,10 @@ a {
    }
 
    &__title {
-      font-size: 20px;
-      color: #4d4d4d;
+      a {
+         font-size: 20px;
+         color: #4d4d4d;
+      }
    }
    &__text {
       font-size: 16px;
@@ -181,7 +183,7 @@ a {
    cursor: pointer;
    border-radius: 7px;
    border: solid 2px #336699;
-   padding:  2px 2px;
+   padding: 2px 2px;
    background-color: rgb(255, 255, 196);
    &__left {
       display: flex;
@@ -240,5 +242,97 @@ a {
 
    &__right-content-icon-box-star {
       color: #4d4d4d;
+   }
+}
+.reklama {
+   width: 100%;
+   height: 75.9854561px;
+   background-color: #336699;
+   position: relative;
+   &__item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // width: 100px;
+      padding: 15px 0;
+      border-radius: 10px;
+      width: 85%;
+      background-color: #0099ff;
+      border: solid 2px #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #fff;
+   }
+}
+.about-filter {
+   &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   &__up-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 80px;
+      margin: 20px 0;
+   }
+
+   &__select {
+      border: 0;
+      font-size: 14px;
+      color: #336699;
+      outline: none;
+   }
+
+   &__up-block-inp-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+   }
+
+   &__up-block-inp {
+      width: 40.8061132px;
+      height: 30.2143913px;
+      border-radius: 7px;
+      border: solid 1px #4d4d4d;
+   }
+
+   &__line {
+      width: 100%;
+      height: 1px;
+      background-color: #0099ff;
+   }
+
+   &__text {
+      font-size: 20px;
+      text-align: center;
+      color: #4d4d4d;
+      margin: 15px 0;
+   }
+
+   &__down-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 80px;
+    margin: 20px 0px 0px 0px ;
+   }
+
+   &__down-block-fl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__down-block-sr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
 }
