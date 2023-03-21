@@ -10,9 +10,10 @@ a {
 }
 .header {
    &__container {
+      margin-top: 40px;
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 5px;
    }
 
    &__up-block {
@@ -35,10 +36,14 @@ a {
    &__title {
       font-size: 28px;
       color: #336699;
-      font-weight: 500;
+      font-weight: 600;
       img {
-         width: 23.14224405px;
-         height: 30.72986505px;
+         width: 18px;
+         height: 22px;
+      }
+      span{
+         font-size: 28px;
+         font-weight: 200;
       }
    }
 
@@ -47,7 +52,10 @@ a {
       justify-content: center;
       align-items: center;
       margin-top: 5px;
-      gap: 40px;
+      gap: 24px;
+      a span {
+         font-size: 28px;
+      }
    }
 
    &__icon-star {
@@ -74,18 +82,18 @@ a {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 3px;
+      gap: 4px;
    }
    &__cub-up {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 3px;
+      gap: 4px;
    }
 
    &__cub {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       background-color: #336699;
       border-radius: 3px;
       display: block;
@@ -95,7 +103,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 3px;
+      gap: 4px;
    }
 
    &__inp-box {
@@ -106,23 +114,27 @@ a {
    }
 
    &__input {
-      width: 265px;
+      width: 245px;
       outline: none;
       border: 1px solid #336699;
-      border-radius: 7px;
-      height: 32px;
+      border-radius: 10px;
+      height: 36px;
       padding-left: 10px;
+   }
+   &__input::placeholder{
+      font-style: italic;
    }
 }
 
 #position {
    position: absolute;
    left: auto;
-   right: 1px;
-   top: 4.6px;
+   right: 3px;
+   top: 6.6px;
    color: #336699;
    margin-right: 3px;
    z-index: 999;
+   transform: rotate(90deg);
 }
 .hr-label-effect {
    position: absolute;
@@ -137,20 +149,35 @@ a {
    &__container {
       margin-top: 30px;
       display: flex;
+<<<<<<< HEAD
+      flex-direction: column;
+      gap: 15px;
+   }
+   &__box {
+=======
       justify-content: center;
       // align-items: center;
       flex-direction: column;
       gap: 15px;
    }
    &__title-box{
+>>>>>>> 20c27536c75c3416f51e9d92771e0698077d31c6
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+<<<<<<< HEAD
+      gap: 10px;
+      .mini{
+         width: 65%;
+      }
+   }
+=======
       gap: 20px;
    }
 
+>>>>>>> 20c27536c75c3416f51e9d92771e0698077d31c6
    &__line {
       width: 100%;
       height: 1px;
@@ -163,13 +190,20 @@ a {
    }
 
    &__title {
+      font-size: 20px;
+      color: #4d4d4d;
+         font-weight: 600;
+         text-align: center;
+
       a {
          font-size: 20px;
+         font-weight: 600;
          color: #4d4d4d;
       }
    }
    &__text {
-      font-size: 16px;
+      font-size: 17px;
+      font-weight:600;
       color: #4d4d4d;
       text-align: center;
    }
@@ -185,7 +219,12 @@ a {
    display: flex;
    justify-content: center;
    flex-direction: column;
+   margin-left: 45px;
+   &__list a{
+      font-size: 18px;
+   }
    &__list::marker {
+      padding-left: 5px;
       color: #336699;
    }
 }
@@ -197,11 +236,30 @@ a {
       align-items: center;
       flex-direction: column;
       gap: 20px;
+      .noncore{
+         background-color: #fff;
+         border: solid 1px #4d4d4d;
+      }
    }
    &__item {
       display: flex;
       justify-content: center;
       gap: 10px;
+   }
+   &__strelka{
+      margin: 10px 0;
+   }
+   &__strelka-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+         color: #336699;
+         font-size: 18px;
+         font-weight: 600;
+      span {
+         color: #336699;
+      }
    }
 }
 .ad-item {
@@ -250,7 +308,7 @@ a {
    }
 
    &__right-content-price {
-      font-size: 14px;
+      font-size: 16px;
       color: #4d4d4d;
    }
 
@@ -441,6 +499,24 @@ a {
       border: solid 1px #4d4d4d;
    }
 }
+.footer {
+   background-color: #336699;
+   &__container {
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      a{
+         font-size: 14px;
+         color: #e7e6e6;
+      }
+   }
+}
+
 .sel-text {
    font-size: 14px;
    color: #4d4d4d;
@@ -641,9 +717,6 @@ a {
    margin-right: 20px;
 }
 
-.adver {
-   margin-bottom: 100px;
-}
 .form__button {
    width: 40%;
    height: 40px;
@@ -679,10 +752,11 @@ a {
 }
 .user__profile__title {
    font-size: 18px;
-   font-weight: normal;
+   font-weight: 600;
    text-align: center;
    margin-top: 30px;
    margin-bottom: 20px;
+   color: #4d4d4d;
 }
 
 .user__profile__activations {
@@ -835,6 +909,7 @@ a {
    button {
       all: unset;
       margin-top: 200px;
+      margin-left: 50px;
       background-color: #0099ff;
       color: white;
       padding: 15px 40px;
